@@ -1,4 +1,3 @@
-
 const key = "demo";
 const functionName = "TIME_SERIES_DAILY";
 const symbolName = "MSFT";

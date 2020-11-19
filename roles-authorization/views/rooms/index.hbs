@@ -1,0 +1,10 @@
+<h1>All rooms</h1>
+{{#each roomsList}}
+<a href="/rooms/{{_id}}">
+  <p>Name: {{name}} Price: {{price}}</p>
+</a>
+
+{{/each}}
+<h4>
+  <a href="/rooms/add">Add a room</a>
+</h4>

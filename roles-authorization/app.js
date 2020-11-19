@@ -11,7 +11,7 @@ const path = require('path');
 
 
 mongoose
-  .connect('mongodb://localhost/passport', { useNewUrlParser: true })
+  .connect('mongodb://localhost/roles-authorization', { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -148,5 +148,8 @@ app.use('/', index);
 
 const auth = require('./routes/auth');
 app.use('/auth', auth);
+
+const rooms = require('./routes/rooms');
+app.use('/rooms', rooms);
 
 module.exports = app;
